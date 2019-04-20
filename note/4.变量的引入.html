@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <style media="screen">
+      #demo {
+        width:200px;
+        height:200px;
+        background:red;
+      }
+    </style>
+    <script>
+      function toBlue () {
+        var a = document.getElementById('demo');
+        a.style.width='400px';
+        a.style.height='400px';
+        a.style.background='blue';
+      }
+      function toRed () {
+        var b = document.getElementById('demo');
+        b.style.width='200px';
+        b.style.height='200px';
+        b.style.background='red';
+      }
+    </script>
+  </head>
+  <body>
+    <div id="demo" onmouseover = "toBlue()" onmouseout = "toRed()"></div>
+    <pre>
+      function toBlue () {
+        var a = document.getElementById('demo');
+        a.style.width='400px';
+        a.style.height='400px';
+        a.style.background='blue';
+      }
+      function toRed () {
+        var b = document.getElementById('demo');
+        b.style.width='200px';
+        b.style.height='200px';
+        b.style.background='red';
+      }
+      这里就是将document.getElementById('demo')这一长串需要一直重复的话
+      声明为了变量a和变量b
+      不仅减少了代码量，更增加的代码的可读性。
+    </pre>
+  </body>
+</html>

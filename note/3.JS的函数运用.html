@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <style media="screen">
+      #demo {
+        width:200px;
+        height:200px;
+        background:red;
+      }
+    </style>
+    <script>
+      function toBlue () {
+        document.getElementById('demo').style.width='400px';
+        document.getElementById('demo').style.height='400px';
+        document.getElementById('demo').style.background='blue';
+      }
+      function toRed () {
+        document.getElementById('demo').style.width='200px';
+        document.getElementById('demo').style.height='200px';
+        document.getElementById('demo').style.background='red';
+      }
+    </script>
+  </head>
+  <body>
+    <div id="demo" onmouseover = "toBlue()" onmouseout = "toRed()"></div>
+    <pre>
+
+
+      function toBlue () {
+        document.getElementById('demo').style.width='400px';
+        document.getElementById('demo').style.height='400px';
+        document.getElementById('demo').style.background='blue';
+      }
+      function toRed () {
+        document.getElementById('demo').style.width='200px';
+        document.getElementById('demo').style.height='200px';
+        document.getElementById('demo').style.background='red';
+      }
+
+      一定注意javascript的书写格式
+          <h1> ,;() </h1>
+      这些符号不能少！！！！很多报错都是因为这些格式引起的。
+      将函数写在head标签内，减少了行间出现过多的代码，增加了代码的可读性。
+    </pre>
+  </body>
+</html>

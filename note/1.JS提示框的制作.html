@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <style media="screen">
+      #demo1 {
+        width:200px;
+        height:200px;
+        background:gray;
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="按钮" value="按钮" onmouseover="document.getElementById('demo1').style.display=('block');" onmouseout="document.getElementById('demo1').style.display=('none');">
+    <div id="demo1">
+    为了您的信息安全！！！
+    </div>
+    <pre>
+      虽然类似于css的hover下拉菜单。
+      但是不同的是，CSS里面下拉菜单的实现只能是父子级关系。
+      Javascript中实现这种效果则不用考虑父子级关系。
+    </pre>
+
+  </body>
+</html>

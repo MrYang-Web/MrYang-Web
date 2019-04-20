@@ -1,0 +1,11 @@
+body {
+  background-color: green;
+}
+h3 {
+  color: yellow;
+}
+input {
+  width: 100px;
+  height: 50px;
+  background-color: yellow;
+}

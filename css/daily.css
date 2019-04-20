@@ -1,0 +1,20 @@
+body {
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 1px solid #e5e5e5;
+  background-color: #ccc;
+  padding:10px 10px 10px 10px;
+  font-family: sans-serif;
+  box-shadow: 1px 1px 1px silver;
+
+}
+pre{
+  line-height: 3em;
+  font-size: 16px;
+}
+
+
+i {
+  font-style:  normal;
+  color:blue;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>className的应用</title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <style media="screen">
+      #demo {
+        width:200px;
+        height:200px;
+      }
+      .toBlue{
+        background:blue;
+      }
+      .toRed{
+        background:red;
+      }
+    </style>
+    <script type="text/javascript">
+      function setColor() {
+        var a = document.getElementById('demo');
+        if (a.className == 'toBlue') {
+          a.className = 'toRed';
+        }else {
+          a.className = 'toBlue';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" name="按钮" value="改变样式" onclick="setColor()">
+    <div id="demo" class="toBlue">
+    </div>
+    <pre>
+      className 是唯一个属性和html不一样写法的因为class是预留名词
+      如果不想将属性写在行内，可以用className的方法调用函数
+            1. className
+            2. classList.add & classList.Renove
+            配合css
+            看 dom操作
+    </pre>
+  </body>
+</html>

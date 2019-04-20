@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <style media="screen">
+      #demo {
+        width:200px;
+        height:200px;
+        background:red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"
+    onmouseover = "
+    document.getElementById('demo').style.width='400px';
+    document.getElementById('demo').style.height='400px';
+    document.getElementById('demo').style.background='blue';
+    "
+    onmouseout = "
+    document.getElementById('demo').style.width='200px';
+    document.getElementById('demo').style.height='200px';
+    document.getElementById('demo').style.background='red';
+    ">
+    </div>
+    <pre>
+      Javrscript的初级运用就是通过抓取事件来改变CSS样式
+      这里抓取的事件是鼠标移入和移出
+      这些事件是由语言设计公司提供的
+    </pre>
+  </body>
+</html>

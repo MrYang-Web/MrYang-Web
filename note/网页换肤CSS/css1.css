@@ -1,0 +1,11 @@
+body {
+  background-color: blue;
+}
+h3 {
+  color: white;
+}
+input {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}

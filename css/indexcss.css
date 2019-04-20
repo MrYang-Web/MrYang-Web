@@ -1,0 +1,241 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfloat:after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0
+}
+.clearfloat{zoom:1}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a{
+  color:#fff;
+  -webkit-transition: color 500ms;
+  -o-transition: color 500ms;
+  transition: color 500ms;
+}
+
+a:hover{
+  color: #f18e5a;
+  -webkit-transition: color 500ms;
+  -o-transition: color 500ms;
+  transition: color 500ms;
+}
+p {
+  font-size: 14px;
+}
+body {
+  background-color: #f2f2f2;
+}
+
+
+
+/* 导航样式 */
+.top-head {
+  width: auto;
+  height: 78px;
+  background-color: #124666;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid rgba(204,204,204,0.1);
+}
+.top-head-logo {
+  margin-left: 10%;
+  margin-top: 9px;
+}
+
+.top-head-logo .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: black;
+  background-image: url(../imgs/katong.jpg);
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+.top-head-logo  .logo:hover{
+  transition: width 0.5s,height 0.5s,transform 0.5s;
+  transition-timing-function: ease;
+  transform: rotate(360deg);
+}
+.top-head-logo .id {
+  margin-top: -5px;
+  margin-left:20px;
+}
+.top-head-logo .id h2 {
+  width: 150px;
+  font-size: 31px;
+}
+.top-head-logo .id p {
+  margin-top: 5px;
+  font-size:14px;
+}
+/* 动态下划线效果的实现 */
+.super-link{
+position: relative;
+text-decoration: none;
+}
+/*伪元素是两个冒号*/
+.super-link::after{
+content: '';
+width: 100%;
+height: 1px;/*设置伪元素的高度，这里是下划线的粗细*/
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #f18e5a;/*当前标签继承的文字颜色，这里让伪元素的背景色与父元素的文字颜色相同*/
+transform: scale(0);
+transition:all .35s;
+}
+.super-link:hover::after{
+transform: scale(1);
+}
+.left::after{
+transform-origin: left;
+}
+.right::after{
+transform-origin: right;
+}
+.center::after{
+transform-origin: center;
+}
+
+.top-head .nav ul li {
+  font-size: 16px;
+  margin-left: 5em;
+  vertical-align: top;
+}
+
+
+/* 个人信息样式 */
+.info {
+  width: 100%;
+  height:810px;
+  background-image: url(../imgs/info.jpg);
+  position: absolute;
+  z-index: 10;
+}
+
+.info .text {
+  margin-left: 20%;
+  width: 15%;
+  height:100%;
+  background-image: url(../imgs/text.png);
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+.info:hover .text {
+  opacity:1;
+  transition: all 1s ease-in;
+}
+
+/* 联系我样式 */
+
+.contact{
+  margin-right: 10%;
+  color: #fff;
+}
+.contact p {
+  line-height: 60px;
+}
+
+#demo2 {
+  width: 100%;
+  height:820px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 11;
+}
+#demo2 .wrap {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/QRcode.png);
+}
+/* 中间banner样式 */
+.banner1 {
+  position: relative;
+  float: left;
+}
+.banner2 {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  opacity: 0;
+  transition: all 1s ease-in;
+  z-index: 1;
+}
+.banner2:hover {
+  opacity: 1;
+}
+
+/* 文章列表样式 */
+.log,.note,.reproduce{
+  padding: 5px;
+  width: 25%;
+  height: 240px;
+  border-radius: 5px;
+  background-color: #4789b3;
+  box-shadow: 1px 1px 1px silver;
+  overflow: auto;
+  transition: 1.5s;
+  color: #666;
+}
+
+.log {
+  margin-left: 10%;
+}
+
+.log:hover {
+  background-color: #f07c82;
+  transition: 0.5s;
+}
+.note:hover {
+  background-color: #c97df0;
+  transition: 0.5s;
+}
+.reproduce:hover {
+  background-color: #7df0ab;
+  transition: 0.5s;
+}
+.title {
+  width: 100%;
+  height: 25px;
+}
+.note,.reproduce {
+  margin-left: 2%;
+}
+
+h3 {
+  color: #f18e5a;
+}
+li {
+  list-style: none;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  text-align: center;
+  line-height: 50px;
+  color: #666;
+  font-size: 14px;
+}

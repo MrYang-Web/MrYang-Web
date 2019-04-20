@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>if...else语句的应用</title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <style>
+      #demo1 {
+        width:100px;
+        height:30px;
+        background:blue;
+        color:white;
+      }
+      #demo2 {
+        width:100px;
+        height:150px;
+        background:red;
+        color:white;
+        overflow: auto;
+      }
+    </style>
+    <script>
+    function show() {
+        var a = document.getElementById('demo2');
+        if(a.style.display == 'none') {
+          a.style.display = 'block';
+        } else {
+          a.style.display = 'none';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" name="按钮" value="显示/隐藏" id="demo1" onclick="show()">
+    <div id="demo2" style="display:none;">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+      </ul>
+    </div>
+    <pre>
+      虽然CSS的hover也能实现这种效果
+      但是CSS需要父子级的div才能实现
+      并且还需要用到绝对和相对定位，这样容易出现不可预知的文档流bug
+      但是从用户体验出发，js制作这种效果需要用户去点击
+      增加了用户的操作程度，违背了培养用户惰性的原则
+
+      因为js的style.display是取不到css样式表里的样式的!!!!!
+      这个页面如果不把display设置在行内，就需要点击两次才能实现下拉菜单！！！
+      这样变成了第一次点击取到了空值，
+      于是执行第一个，
+      就是设置display为none；
+      所以你把display：none的样式直接写成内联样式就好了，
+      写成style=“display：none；”这样就好了
+
+      如果不想写在行内，下面几种方法可以去尝试:
+      1. className
+      2. classList.add & classList.Renove
+      配合css
+      看 dom操作
+    </pre>
+
+  </body>
+</html>

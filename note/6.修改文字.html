@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>修改文字</title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <script>
+      function setText () {
+        var text = document.getElementById('demo');
+        if (text.value =='hello world!'){
+          text.value = 'Nothing is so common as the wish as to bo remarkble';
+          text.title = '修改文字';
+        } else{
+          text.value = 'hello world!';
+          text.title = '修改文字';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input  id="demo" type="text" name="输入框" value="hello world!">
+    <input type="button" name="按钮" value="更改文字" onclick="setText()">
+    <pre>
+      JavaScript可以通过抓取标签的属性
+      然后修改属性的值做到交互效果
+      有的时候报错是因为输入法的分号;打成中文分号了；
+      这两个分号不一样！！！！！！！！！
+    </pre>
+  </body>
+</html>

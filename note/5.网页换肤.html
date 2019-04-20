@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>网页换肤</title>
+    <link rel="stylesheet" href="../css/daily.css">
+    <link id="demo" rel="stylesheet" href="网页换肤CSS/css1.css">
+    <script>
+      function skin1 (){
+        var a = document.getElementById('demo');
+        a.href = '网页换肤CSS/css1.css';
+      }
+      function skin2 (){
+        var a = document.getElementById('demo');
+        a.href = '网页换肤CSS/css2.css';
+      }
+    </script>
+  </head>
+  <body>
+    <input  type="button" name="皮肤一" value="蓝色" class="css1" onclick="skin1()">
+    <input  type="button" name="皮肤一" value="绿色" class="css2" onclick="skin2()">
+    <h3>书写Javascript一定注意不能有错误，要找到书写错误很麻烦。。。。。</h3>
+  </body>
+</html>
