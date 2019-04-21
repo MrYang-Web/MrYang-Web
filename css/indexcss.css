@@ -238,9 +238,15 @@ footer {
   background-color: #ccc;
   position: absolute;
   bottom: 0px;
-  z-index: 10;
+  z-index: 5;
   text-align: center;
   line-height: 50px;
   color: #666;
   font-size: 14px;
+}
+audio {
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+  z-index: 10;
 }
