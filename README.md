@@ -1,4 +1,4 @@
-# [MrYang-Web.github.io](https://MrYang-Web.github.io)
+# [MrYang.github.io](https://MrYang-Web.github.io)
 个人博客.尝试将自己做的网站丢在网上.  
 标题即地址.复制到浏览器打开即可.  
 ~~MarkDown语法设置不来超链接.设置了找不到地址.~~  
