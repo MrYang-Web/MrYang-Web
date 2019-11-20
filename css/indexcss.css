@@ -249,4 +249,5 @@ audio {
   bottom: 0px;
   left: 10px;
   z-index: 10;
+  outline: none;
 }

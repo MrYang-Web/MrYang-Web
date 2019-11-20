@@ -249,7 +249,7 @@
       </div>
       <hr>
     </div>
-    <audio id="audio" src="video/AlwaysWithMe.mp3" controls autoplay loop></audio>
+    <audio id="audio" src="http://bj.bcebos.com/v1/hnteacher-resources/PersonalWordAttachment/20191121/6370989464005747904907479.mp3?authorization=bce-auth-v1/4ad12fdb4b764e7880528b4c1a87f98a/2019-11-20T16%3A57%3A20Z/-1//26f5f6d5009cb60b02f3d5c44f4311eadaf93fe01dbeb46e91e6e258bdeb23df" controls autoplay loop></audio>
     <footer>
       Copyright ©2019 [MR.Yang] Powered By [html+css] Version 1.0.0
     </footer>
@@ -260,10 +260,11 @@
     //解决谷歌浏览器不自动播放的问题.
         var video = document.getElementById('audio');
         setTimeout(() => {
-            video.play();
+			if (video.paused) {
+				video.paused=false;
+				video.play();
+			}
         }, 1000);
-    </script>
-
-
+	</script>
   </body>
 </html>
