@@ -1,11 +1,13 @@
 function showpic() {
-  var a = document.getElementById('demo');
-  var b = a.style.display
-  if (b == 'none') {
-      a.style.display = 'block';
-  } else {
-    a.style.display = 'none';
-  }
+	var video = document.getElementById('audio');
+	var a = document.getElementById('demo');
+	var b = a.style.display
+		if (b == 'none') {
+			a.style.display = 'block';
+		} else {
+			a.style.display = 'none';
+		}
+		audio.play();
 }
 
 function showpic2() {
